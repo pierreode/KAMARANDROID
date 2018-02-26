@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="11300" id="nz.co.KAMAR" version="1.12" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="PushNotification">
+        <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-intent href="market:*" />
+    <name>KAMAR</name>
+    <description>
+        KAMAR Mobile App
+    </description>
+    <author email="kent@kamar.nz" href="https://kamar.nz">
+        KAMAR Ltd
+    </author>
+    <content src="launch.html" />
+    <access origin="*" subdomains="true"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <meta content="connect-src *;" http-equiv="Content-Security-Policy" />
+</widget>
