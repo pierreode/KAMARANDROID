@@ -1,3 +1,4 @@
+
 /* logo/background */
 #home.ui-page, #home .ui-content {
 	height: 100% !important;
@@ -39,18 +40,18 @@ table.kamar-app-table {
 	text-shadow: none;
 }
 	table.kamar-app-table tbody th, table.kamar-app-table tbody td {
-		border: 1px solid black;
+		border: 1px solid #C6C6C6;
 	}
 	table.kamar-app-table .noborders {
 		border: none;
 	}
 	table.kamar-app-table .shaded {
-		background-color: #CFDCE8;
+		background-color: #EEEEEE;
 	}
 
 /* general fixes for the multiresolution display */
 .ui-content {
-	padding: 0px !important;
+	padding: 0 .5em !important;
 	background: transparent !important;
 	overflow: hidden !important;
 }
@@ -106,13 +107,11 @@ table.kamar-app-table {
 		border-top: 1px solid #5E6A72;
 		border-bottom: 1px solid #5E6A72;
 		color: #ffffff;
-		text-shadow: 0 1px 0 #000000;
 	}
 	.common-navigation .current {
 		background: #86C6F8;
 		border: 1px solid #2373A5;
 		color: #000000;
-		text-shadow: 0 1px 0 #ffffff;
 	}
 	.common-navigation div.navigation-link-group {
 		width: 240px;
@@ -214,7 +213,6 @@ table.kamar-app-table {
 	border-top: 1px solid #5E6A72;
 	border-bottom: 1px solid #5E6A72;
 	color: #ffffff;
-	text-shadow: 0 1px 0 #000000;
 }
 #notices #notices-meetings .notice-meeting, #notices #notices-general .notice-general {
 	position: relative;
@@ -928,8 +926,8 @@ table.kamar-app-table {
 	}
 		#studentqualifications #qualifications .qualification-type .qualification-heading {
 			padding: 5px 10px;
-			background-color: #828F9C;
-			color: #ffffff;
+			background-color: #E6E6E6;
+			color: #323232;
 			text-shadow: none;
 		}
 		#studentqualifications #qualifications .qualification-type .qualification {
@@ -1239,6 +1237,8 @@ table.kamar-app-table {
 @media screen and (min-width: 768px) {
 	body {
 		margin: 0px;
+		text-shadow: none;
+		width:90% !important;
 	}
 		.common-header {
 			display: none;
@@ -1485,4 +1485,9 @@ table.kamar-app-table {
 	#teacherdetails div.teacher-photo, #teacherdetails div.teacher-core-details, #teacherdetails div.teacher-extended-details, #teacherdetails div.student-caregiver-details, #teacherdetails div.student-misc-details {
 		width: 50%;
 	}
+}
+
+
+.notempty{
+	background-color: green;
 }
