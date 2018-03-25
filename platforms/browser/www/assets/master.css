@@ -388,7 +388,10 @@ table.kamar-app-table {
 /* Student Details Display */
 .student-details {
 	padding: 10px 20px;
+	border: none;
+
 }
+
 .student-details:after {
 	content: '.';
 	display: block;
@@ -397,8 +400,10 @@ table.kamar-app-table {
 	visibility: hidden;
 }
 	.student-details .student-name {
-		width: 60%;
+		width: 100%;
 		float: left;
+		font-weight: bold;
+		font-size: 1.2em;
 	}
 	.student-details .student-year-level {
 		width: 20%;
@@ -420,7 +425,7 @@ table.kamar-app-table {
 	width: 100%;
 }
 	#studentdetails div.field-section {
-		border: 1px solid #000000;
+		border: 1px solid #C6C6C6;
 		margin: 5px;
 		padding: 5px;
 	}
@@ -451,7 +456,7 @@ table.kamar-app-table {
 			#studentdetails div.field-section .field .field-name {
 				float: left;
 				width: 150px;
-				margin-right: 5px;
+				margin-right: 10px;
 				text-align: right;
 			}
 			#studentdetails div.field-section .field .field-value {
@@ -539,8 +544,10 @@ table.kamar-app-table {
 	visibility: hidden;
 }
 	.teacher-details .teacher-name {
-		width: 80%;
+		width: 100%;
 		float: left;
+		font-weight: bold;
+		font-size: 1.2em;
 	}
 	.teacher-details .teacher-tutor, .teacher-details .teacher-class {
 		width: 20%;
@@ -1114,6 +1121,7 @@ table.kamar-app-table {
 			text-align: right;
 			overflow: hidden;
 			white-space:nowrap;
+			text-transform: uppercase;
 		}
 		#studentpastoral #pastoral .incident .incident-reason  {
 			margin: 0px 135px 0px 35px;

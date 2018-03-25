@@ -263,13 +263,6 @@
 .ui-body-c,.ui-overlay-c{
     border:1px solid #aaa;
     color:#333;
-    background:#f9f9f9;
-    background-image:-webkit-gradient(linear,left top,left bottom,from( #f9f9f9 ),to( #eee ));
-    background-image:-webkit-linear-gradient( #f9f9f9,#eee );
-    background-image:-moz-linear-gradient( #f9f9f9,#eee );
-    background-image:-ms-linear-gradient( #f9f9f9,#eee );
-    background-image:-o-linear-gradient( #f9f9f9,#eee );
-    background-image:linear-gradient( #f9f9f9,#eee )
 }
 .ui-overlay-c{
     background-image:none;
@@ -282,17 +275,18 @@
     color:#333
 }
 .ui-body-c .ui-link{
-    color:#2489ce;
-    font-weight:bold
+    color:#00538a;
+    /* font-weight:bold */
+    text-decoration: none;
 }
 .ui-body-c .ui-link:visited{
-    color:#2489ce
+    color:#00538a
 }
 .ui-body-c .ui-link:hover{
-    color:#2489ce
+    color:#00538a
 }
 .ui-body-c .ui-link:active{
-    color:#2489ce
+    color:#00538a
 }
 .ui-btn-up-c{
     border:1px solid #ccc;
