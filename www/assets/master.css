@@ -38,6 +38,7 @@
 table.kamar-app-table {
 	border-collapse: collapse;
 	text-shadow: none;
+	width:100%;
 }
 	table.kamar-app-table tbody th, table.kamar-app-table tbody td {
 		border: 1px solid #C6C6C6;
@@ -97,16 +98,17 @@ table.kamar-app-table {
 		background-color: #D7D7D7;
 		text-align: center;
 		line-height: 1.8em;
-		color: #5E646D;
+		color: #a2a2a2;
 		text-shadow: none;
+		font-size:1.1em;
 	}
 	.common-navigation h3 {
 		margin: 0px;
 		padding: 5px 10px;
-		background-color: #94A1AC;
-		border-top: 1px solid #5E6A72;
-		border-bottom: 1px solid #5E6A72;
-		color: #ffffff;
+		/* background-color: #94A1AC; */
+		border-top: 1px solid #C6C6C6;
+		border-bottom: 1px solid #C6C6C6;
+		color: #666666;
 	}
 	.common-navigation .current {
 		background: #86C6F8;
@@ -209,10 +211,10 @@ table.kamar-app-table {
 #notices h3 {
 	margin: 0px;
 	padding: 5px 10px;
-	background-color: #94A1AC;
 	border-top: 1px solid #5E6A72;
 	border-bottom: 1px solid #5E6A72;
-	color: #ffffff;
+    background-color: #E6E6E6;
+	font-weight: 400;
 }
 #notices #notices-meetings .notice-meeting, #notices #notices-general .notice-general {
 	position: relative;
@@ -391,7 +393,9 @@ table.kamar-app-table {
 	border: none;
 
 }
-
+#health-professionals-information feild-section{
+	border: 1px solid #C6C6C6;
+}
 .student-details:after {
 	content: '.';
 	display: block;
@@ -462,6 +466,7 @@ table.kamar-app-table {
 			#studentdetails div.field-section .field .field-value {
 				float: left;
 				overflow: hidden;
+				font-weight: 300;
 			}
 			#studentdetails div.health-professionals-information {
 				margin: 5px 5px;
@@ -564,7 +569,7 @@ table.kamar-app-table {
 	width: 100%;
 }
 	#teacherdetails div.field-section {
-		border: 1px solid #000000;
+		border: 1px solid #AAA;
 		margin: 5px;
 		padding: 5px;
 	}
@@ -597,6 +602,7 @@ table.kamar-app-table {
 			#teacherdetails div.field-section .field .field-value {
 				float: left;
 				overflow: hidden;
+				font-weight: 300;
 			}
 			#teacherdetails div#teacher-departments {
 				float: left;
@@ -757,6 +763,7 @@ table.kamar-app-table {
 	margin-left: 10px;
 	font-size: 0.7em;
 	text-align: center;
+	width: 90%;
 }
 	#studentattendance #attendance-summary table th, #studentattendance #attendance-summary table td {
 		width: 50px;
@@ -780,11 +787,17 @@ table.kamar-app-table {
 	clear: both;
 	visibility: hidden;
 }
+#attendance-details{
+	padding-left: 10px;
+}
+#attendance-codes{
+	padding-left: 10px;
+}
 	#studentattendance .week-start {
 		float: left;
 		width: 15%;
 		margin: 5px 1% 5px 0px;
-		text-align: right;
+		text-align: left;
 		overflow: hidden;
 		white-space:nowrap;
 	}
@@ -808,8 +821,8 @@ table.kamar-app-table {
 	}
 		#studentresults #all-results .result-level .level-heading {
 			padding: 5px 10px;
-			background-color: #828F9C;
-			color: #ffffff;
+			background-color: #E6E6E6;
+			color: #323232;
 			text-shadow: none;
 		}
 		#studentresults #all-results .result-level .result {
@@ -878,6 +891,7 @@ table.kamar-app-table {
 	#studentncea #ncea-summary table.ncea-credits-by-level {
 		float: left;
 		clear: left;
+		margin-top: 2em;
 	}
 	#studentncea #ncea-summary #ncea-graph, #studentncea #ncea-summary table.ncea-credits-by-year {
 		float: left;
@@ -1158,7 +1172,7 @@ table.kamar-app-table {
 		background-color: #FF0522;
 	}
 	#attendancemarking .period-details .attendancesavebuttons.attendance-finished {
-		background-color: #FFAFB4;
+		background-color: #99f199;
 	}
 		#attendancemarking .period-details .attendancesavebuttons #attendancefinishbutton {
 			display: block;
@@ -1170,7 +1184,7 @@ table.kamar-app-table {
 			text-decoration: none;
 		}
 		#attendancemarking .period-details .attendancesavebuttons.attendance-finished #attendancefinishbutton {
-			color: #BB8CA1;
+			color: #004200;
 			cursor: default;
 		}
 	#attendancemarking .period-details .date {
@@ -1217,7 +1231,7 @@ table.kamar-app-table {
 				margin: 0px 1px;
 				padding: 1px 0px;
 				border: 1px solid #DDDDDD;
-				background-color: #FFFFCC;
+				background-color: #FCFCFC;
 				color: #000000;
 				font-size: 9px;
 				text-align: center;
@@ -1225,14 +1239,15 @@ table.kamar-app-table {
 				text-shadow: none;
 				-moz-border-radius: 1em;
 				-webkit-border-radius: 1em;
-				border-radius: 1em;
+				border-radius: .1em;
 			}
 			#attendancemarking #students .attendance-student-row .attendance-buttons a:hover, #attendancemarking #students .attendance-student-row .attendance-buttons a:active {
-				background-color: #BFBF99;
+				background-color: #a2c3d3;
 				color: #000000;
 			}
 			#attendancemarking #students .attendance-student-row .attendance-buttons a.selected {
 				background-color: #00DD00;
+				color: #FAFAFA;
 			}
 			#attendancemarking #students .attendance-student-row .attendance-buttons a.selected.otherreason {
 				background-color: #00FFFF;
@@ -1497,5 +1512,5 @@ table.kamar-app-table {
 
 
 .notempty{
-	background-color: green;
+	background-color: #b2d8b2;
 }
