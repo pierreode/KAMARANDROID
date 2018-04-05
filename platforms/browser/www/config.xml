@@ -18,4 +18,5 @@
     <allow-intent href="geo:*" />
     <meta content="connect-src *;" http-equiv="Content-Security-Policy" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="android-build-tool" value="gradle" />
 </widget>

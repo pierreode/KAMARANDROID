@@ -1,6 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-versionCode="11300" id="nz.co.KAMAR" version="1.12" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
+    
+    <!-- Push Plugin -->
+    <preference name="android-build-tool" value="gradle" />
+    <plugin name="phonegap-plugin-push" source="npm">
+        <param name="SENDER_ID" value="1086672148145" />
+    </plugin>
 
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />

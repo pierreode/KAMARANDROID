@@ -718,7 +718,7 @@ table.kamar-app-table {
 			position: relative;
 			min-height: 23px;
 			height: 23px;
-			border: 1px solid #6D6D6D;
+			border: 1px solid #D6D6D6;
 			margin: -1px 0px 0px -1px;
 			overflow: hidden;
 			font-size: 0.8em;
@@ -1173,6 +1173,7 @@ table.kamar-app-table {
 	}
 	#attendancemarking .period-details .attendancesavebuttons.attendance-finished {
 		background-color: #99f199;
+		opacity: 0.5;
 	}
 		#attendancemarking .period-details .attendancesavebuttons #attendancefinishbutton {
 			display: block;
